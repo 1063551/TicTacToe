@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 <body>
+<header>
+    <div id = "Title">
+        <h1>TIC TAC TOE</h1>
+    </div>
+</header>
+    <div id = "Cointainer">
+        <button id = "newGame">NEW GAME</button>
+        <div id = "Grid">
 
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="HeaderModal">Select Game Mode</p>
+            <div id = "PlayerChoose">
+                <span id="singleChoose">
+                    <button id = "SinglePlayerBut"><img src="imgs/single.png" style="width:300px;"></button>
+                </span>
+                <span id="multiChoose">
+                    <button id = "MultiPlayerBut"><img src="imgs/multi.png" style="width:300px;"></button>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
