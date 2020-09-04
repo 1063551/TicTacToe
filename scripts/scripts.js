@@ -70,7 +70,7 @@ function displayGrid() {
     redoBtn.setAttribute("id", "redo")
     redoBtn.setAttribute("style", "background-color: white; border: 0")
     let imageRedo = document.createElement("img")
-    imageRedo.setAttribute("src", "../imgs/redo.png")
+    imageRedo.setAttribute("src", "imgs/redo.png")
     imageRedo.setAttribute("style", "width: 50px;")
     redoBtn.appendChild(imageRedo)
     redoBtn.onclick = function () {
@@ -158,7 +158,7 @@ function setClick(arr) {
                     // <button id="grida"><img src="imgs/O.png" style="width:80px;"></button>
                     // <button id="gridaa"><img src="imgs/X.png" style="width:65px;"></button>
                     let im = document.createElement("img")
-                    im.setAttribute("src", "../imgs/O.png")
+                    im.setAttribute("src", "imgs/O.png")
                     im.setAttribute("style", "width:80px;")
                     im.setAttribute("value", "O")
                     s.appendChild(im)
@@ -170,7 +170,7 @@ function setClick(arr) {
                             let randEl = document.getElementById(arr[randN])
                             if (randEl.hasChildNodes() == false) {
                                 let im = document.createElement("img")
-                                im.setAttribute("src", "../imgs/X.png")
+                                im.setAttribute("src", "imgs/X.png")
                                 im.setAttribute("style", "width:65px;")
                                 im.setAttribute("value", "X")
                                 randEl.appendChild(im)
@@ -180,7 +180,7 @@ function setClick(arr) {
                     }
                 } else if (count % 2 != 0 && gMode != 0) {
                     let im = document.createElement("img")
-                    im.setAttribute("src", "../imgs/X.png")
+                    im.setAttribute("src", "imgs/X.png")
                     im.setAttribute("style", "width:65px;")
                     im.setAttribute("value", "X")
                     s.appendChild(im)
