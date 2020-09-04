@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* 
+Get rid of the blue border around buttons 
+https://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome
+*/
+button:focus {outline:0;}
+
+
+/* Start of the css */
 
 * {
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -110,4 +118,8 @@ h1 {
     font-family: 'Bungee', 'Press Start 2P', Helvetica, sans-serif;
     font-weight: lighter;
     padding: -30px;
+}
+
+#redo {
+    margin-top: 30px;
 }
