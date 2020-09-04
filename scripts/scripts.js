@@ -124,8 +124,16 @@ function displayGrid() {
 
 function resetGrid() {
     document.getElementById("Grid").innerHTML = ""
-    for (let i = 0; i < rem; i++) {
-        container.removeChild(container.lastChild);
+    let c = document.getElementById("container")
+    if (c.childElementCount > 5) {
+        while (true) {
+            if (c.lastElementChild.getAttribute("id") == "redo") {
+                c.removeChild(c.lastElementChild);
+                count = 0;
+                return;
+            }
+            c.removeChild(c.lastElementChild);
+        }
     }
     count = 0
 }
